@@ -16,11 +16,7 @@ The Anti-Crash Detector is a powerful script designed for QBCore-based FiveM ser
 🛠️ Installation & Setup
 1. Clone the Repository
 You can either download the ZIP file or clone the repository using Git.
-
-bash
-Copy
-Edit
-git clone https://github.com/YourUsername/anti-crash-detector.git
+git clone https://github.com/DrizzlyQ/anti-crash-detector.git
 2. Add to Your Server
 Place the anti-crash-detector folder into your resources directory.
 
@@ -35,9 +31,7 @@ Edit
 Config.Webhook = 'YOUR_DISCORD_WEBHOOK_HERE'
 Configure spawn limits, time windows, and enable debug mode if needed:
 
-lua
-Copy
-Edit
+
 Config.SpawnLimit = {
     ped = 10,
     vehicle = 10,
@@ -46,21 +40,19 @@ Config.SpawnLimit = {
 
 Config.TimeWindow = 10  -- In seconds
 Config.DebugPrint = true  -- Set to true for debug logging
+
 4. Ensure Resource is Started
 Make sure the resource is started by adding the following line to your server.cfg:
 
-bash
-Copy
-Edit
 ensure anti-crash-detector
+
 5. (Optional) Install Screenshot-Tool
 For optional screenshots, install screenshot-basic. Then, ensure it’s started before the Anti-Crash Detector:
 
-bash
-Copy
-Edit
+
 ensure screenshot-basic
 ensure anti-crash-detector
+
 🔧 How It Works
 Entity Spawn Detection:
 The script tracks the spawn rate of peds, vehicles, and objects. If the rate exceeds the defined threshold within a short time frame, an alert is triggered.
@@ -109,7 +101,4 @@ Fork the repository and create a pull request.
 
 Reach out to the author via Discord or GitHub.
 
-📌 Important Links
-GitHub Repository
 
-FiveM QBCore Documentation
